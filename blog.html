@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>My Blog</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
 	<link href="styling.css" rel="stylesheet">
 </head>
 
@@ -117,6 +118,64 @@
 				</p>
 		</div>
 
+		<div class='post-container'>
+			<h3>Blog Post:</h3>
+			<h4>Assignment 4: Node.Js Introduction	-	Date: November 12th 2021</h4>
+
+				<p>
+					<strong>Rundown</strong>:
+					This was a simple but slightly confusing assignment. While the requirements were short and sweet, I found myself tripping over my own
+					feet because of my lack of care for good debugging practices.
+				</p>	
+				<p>
+					This assignment was very simple. The requirements were minimal and we were given largely all of the tools that we needed in order to figure
+					out how to solve the problems. But that was a problem for me as I love to make things more complicated than they really need to be. And because of
+					this, I ended up spending plenty more hours on the debugging process than I should have had to. My biggest challenges for this assignment didn't 
+					necessarily come from writing the code, but from debugging it. Although the typical nested "if" statements often trip me up for no good reason. With 
+					some reworking of logic and rethinking my plan of attack a little bit, the coding process was a bit of a breeze.
+				</p>	
+				
+				<p>
+					Then came the debugging issue. Once my code started running, I began to see all of the little issues that had popped up in my code. Luckily, for the vast
+					majority of issues, they were quick solves that sent me on my way fairly quick. But for some of these issues, I got caught in them like a fish in a net. 
+					These issues were things like trying to solve the reason as to why the CSS code and JavaScript weren't showing up for my index.html or my 404.html files.
+					Long story short, they were honestly very minor issues. In fact one of them was exactly this:
+					"if (res.url == '/index.html' || '/') {"
+				</p>
+
+				<p>
+					I'll let you figure out the issue in that piece of code. But that piece held me back for probably an hour. This just goes to show that you can never 
+					rule out the little things. While you may think your code is perfectly fine, just remember...they are little after all.
+				</p>
+		</div>
+
+	</div>
+
+	
+
+	<div id="modal-backdrop" class="hidden"></div>
+	<div id="new-post-modal" class="hidden">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				<h3>Enter New Blog Post</h3>
+				<button type="button" id="modal-close" class="modal-hide-button">&times;</button>
+			  </div>
+
+			<div class="modal-body">
+				<div class="post-input-element">
+					<label for="post-title-input">Blog Title</label>
+					<input type="text" id="post-title-input"></input>
+				</div>
+			</div>
+
+			<div class="modal-body">
+				<div class="post-input-element">
+					<label for="post-input">Blog Title</label>
+					<input type="text" id="post-input"></input>
+				</div>
+			</div>
+
+		</div>
 	</div>
 
 <body/>
